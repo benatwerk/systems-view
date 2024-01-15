@@ -1,0 +1,33 @@
+@import "@/variables";
+
+ul.tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    li {
+        background-color: #e0e0e0;
+        color: #333;
+        padding: 4px 8px;
+        border-radius: 4px;
+        &.advertising_third_party {
+            background-color: rgba($color-blue, 0.2);
+        }
+        &.advertising_first_party {
+            background-color: rgba($color-orange, 0.2);
+        }
+        &.improve_system {
+            background-color: rgba($color-red, 0.2);
+        }
+        &.provide_system {
+            background-color: rgba($color-pink, 0.2);
+        }
+        &.provide_system_operations_support {
+            background-color: rgba($color-teal, 0.2);
+        }
+    }
+}

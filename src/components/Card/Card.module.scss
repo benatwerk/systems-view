@@ -1,0 +1,51 @@
+@import "@/variables";
+
+.card {
+    background-color: white;
+    border: 1px solid rgba($color-blue, 0.2);
+    border-top: 4px solid $color-blue;
+    box-shadow: 0 2px 4px rgba($color-blue, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding: 1rem;
+    max-width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &.Application {
+        border: 1px solid rgba($color-application, 0.2);
+        border-top: 3px solid $color-application;
+        box-shadow: 0 2px 4px rgba($color-application, 0.2);
+    }
+    &.Service {
+        border: 1px solid rgba($color-service, 0.2);
+        border-top: 3px solid $color-service;
+        box-shadow: 0 2px 4px rgba($color-service, 0.2);
+    }
+    &.Database {
+        border: 1px solid rgba($color-database, 0.2);
+        border-top: 3px solid $color-database;
+        box-shadow: 0 2px 4px rgba($color-database, 0.2);
+    }
+    &.Integration {
+        border: 1px solid rgba($color-integration, 0.2);
+        border-top: 3px solid $color-integration;
+        box-shadow: 0 2px 4px rgba($color-integration, 0.2);
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .content {
+        color: #555;
+    }
+
+    @media (max-width: 768px) {
+        max-width: none;
+    }
+}

@@ -1,0 +1,33 @@
+@import "@/variables";
+
+ul.grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    li {
+        flex: 0 1 auto;
+    }
+    @media (max-width: 768px) {
+        li {
+            flex: 1 1 auto;
+        }
+    }
+}
+
+h2 {
+    &.Application {
+        color: $color-application;
+    }
+    &.Service {
+        color: $color-service;
+    }
+    &.Database {
+        color: $color-database;
+    }
+    &.Integration {
+        color: $color-integration;
+    }
+}
